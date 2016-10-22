@@ -1,0 +1,116 @@
+/* Survey page styles */
+
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  text-align: right;
+  padding-top: 1em;
+}
+
+fieldset {
+  border: none;
+}
+
+form ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+form ul li {
+  
+  display: inline-block;
+  padding: 5px;
+}
+
+textarea {
+  width: 240px;
+  height: 60px;
+}
+
+input,
+textarea, 
+select,
+label, 
+button {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: solid 2px #e60535;
+  animation: flickerAnimation 2s infinite;
+}
+
+input[type=radio] {
+  outline: none;
+}
+
+textarea:focus {
+  outline: solid 2px #e60535;
+  animation: flickerAnimation 2s infinite;
+}
+
+select:focus {
+  outline: 2px solid #e60535;
+  animation: flickerAnimation 2s infinite;
+}
+
+@keyframes flickerAnimation { 
+  0%   { outline: 2px solid #e60535; }
+  50%  { outline: 2px solid #000; }
+  100% { outline: 2px solid #e60535; }
+}
+
+select {
+  font-size: 1em;
+  background: #63A898;
+  color: #fff;
+}
+
+legend {
+  display: none;
+}
+
+button {
+  background: #63A898;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 8px;
+}
+
+.newsletter ul li {
+  display: block;
+  margin-bottom: .5em;
+}
+.surveySubmit {
+  display: block;
+  position: relative; 
+  left: 132px;
+  margin-top: 1em;
+}
+
+.flexed {
+  display: flex;
+}
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+
+}
